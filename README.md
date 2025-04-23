@@ -81,17 +81,9 @@ TrelloAutomation/
 
 Your test suite is defined with grouped methods in TrelloTestScripts.java:
 
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"? verbrose"2">
 <suite name="Trello Automation Suite">
   <test name="End-to-End">
-    <groups>
-      <include name="login"/>
-      <include name="createBoard"/>
-      <include name="addList"/>
-      <include name="sortList"/>
-      <include name="cleanup"/>
-      <include name="logout"/>
-    </groups>
     <classes>
       <class name="com.trello.testscripts.TrelloTestScripts"/>
     </classes>
