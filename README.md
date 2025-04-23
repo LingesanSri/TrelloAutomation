@@ -36,7 +36,9 @@ bash
 Copy
 Edit
 git clone https://github.com/LingesanSri/TrelloAutomation.git
+
 cd TrelloAutomation
+
 Install Dependencies: Ensure you have Java 8+ and Maven installed on your system. Then, run the following command to install dependencies:
 
 bash
