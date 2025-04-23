@@ -39,33 +39,26 @@ An end-to-end test automation suite for Trello built with **Java**, **Selenium W
 ```bash
 git clone https://github.com/LingesanSri/TrelloAutomation.git
 cd TrelloAutomation
+
+
 Configure Your Credentials
 Edit config.properties in the resources/ folder:
 
-properties
-Copy
-Edit
 email=your-email@example.com
 password=yourPassword123
+
 ⚠️ Do not commit real credentials to version control.
 
 Run Tests
 Run the full grouped suite via TestNG:
 
-bash
-Copy
-Edit
 mvn clean test -DsuiteXmlFile=testng.xml
 Make sure your test methods in TrelloTestScripts.java use TestNG group annotations, like:
 
-java
-Copy
-Edit
 @Test(groups = "login")
+
 📂 Project Structure
-bash
-Copy
-Edit
+
 TrelloAutomation/
 │
 ├── src/
@@ -85,11 +78,9 @@ TrelloAutomation/
 ├── pom.xml                               # Maven config
 └── README.md                             # You're reading this!
 🧪 testng.xml
+
 Your test suite is defined with grouped methods in TrelloTestScripts.java:
 
-xml
-Copy
-Edit
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Trello Automation Suite">
   <test name="End-to-End">
@@ -106,6 +97,7 @@ Edit
     </classes>
   </test>
 </suite>
+
 ✅ Test Coverage
 Login/logout flow
 
