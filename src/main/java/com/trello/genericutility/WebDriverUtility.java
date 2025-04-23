@@ -71,9 +71,9 @@ public class WebDriverUtility {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-	boolean result =	wait.until(ExpectedConditions.textToBePresentInElement(element, text));
+		boolean result = wait.until(ExpectedConditions.textToBePresentInElement(element, text));
 
-	return result;
+		return result;
 	}
 
 	public boolean urlContains(String url) {
@@ -81,7 +81,7 @@ public class WebDriverUtility {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		boolean result = wait.until(ExpectedConditions.urlContains(url));
-		
+
 		return result;
 	}
 
@@ -91,6 +91,15 @@ public class WebDriverUtility {
 
 		boolean result = wait.until(ExpectedConditions.attributeContains(element, attributeName, attributeValue));
 
+		return result;
+	}
+
+	public boolean invisibilityofElement(WebElement element) {
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    boolean result = wait.until(ExpectedConditions.invisibilityOf(element));
+	
 		return result;
 	}
 

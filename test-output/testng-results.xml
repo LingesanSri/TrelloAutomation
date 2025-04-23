@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Trello Launch page has been Displayed...]]>
@@ -11,7 +11,16 @@
       <![CDATA[Login Into your Account is Successful...]]>
     </line>
     <line>
+      <![CDATA[Boards has been Created Successfully]]>
+    </line>
+    <line>
       <![CDATA[List has been added Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Boards has been Closed Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Boards has been Deleted Successfully...]]>
     </line>
     <line>
       <![CDATA[Trello Boards page is Displayed]]>
@@ -20,16 +29,16 @@
       <![CDATA[Your Trello|Atlassaian Account logout is Successful]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-04-21T19:52:21 IST" name="Default suite" finished-at="2025-04-21T19:53:26 IST" duration-ms="65634">
+  <suite started-at="2025-04-23T16:42:02 IST" name="Default suite" finished-at="2025-04-23T16:44:23 IST" duration-ms="141462">
     <groups>
     </groups>
-    <test started-at="2025-04-21T19:52:21 IST" name="Default test" finished-at="2025-04-21T19:53:26 IST" duration-ms="65634">
+    <test started-at="2025-04-23T16:42:02 IST" name="Default test" finished-at="2025-04-23T16:44:23 IST" duration-ms="141462">
       <class name="com.trello.testscripts.TrelloTestScripts">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:52:16 IST" name="launchBrowser" finished-at="2025-04-21T19:52:21 IST" duration-ms="4878" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:41:58 IST" name="launchBrowser" finished-at="2025-04-23T16:42:02 IST" duration-ms="3506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginIntoYourAtlassainAccount()[pri:1, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:52:21 IST" name="loginIntoYourAtlassainAccount" finished-at="2025-04-21T19:52:32 IST" duration-ms="10833" status="PASS">
+        <test-method signature="loginIntoYourAtlassainAccount()[pri:1, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:42:02 IST" name="loginIntoYourAtlassainAccount" finished-at="2025-04-23T16:42:09 IST" duration-ms="7551" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trello Launch page has been Displayed...]]>
@@ -42,18 +51,39 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginIntoYourAtlassainAccount -->
-        <test-method signature="addNewList()[pri:3, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:52:32 IST" name="addNewList" finished-at="2025-04-21T19:52:38 IST" duration-ms="6643" status="PASS">
+        <test-method signature="CreateNewBoard()[pri:2, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:42:09 IST" name="CreateNewBoard" finished-at="2025-04-23T16:42:47 IST" duration-ms="37725" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Boards has been Created Successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CreateNewBoard -->
+        <test-method signature="addNewList()[pri:3, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:42:47 IST" name="addNewList" finished-at="2025-04-23T16:42:54 IST" duration-ms="6989" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[List has been added Successfully...]]>
             </line>
           </reporter-output>
         </test-method> <!-- addNewList -->
-        <test-method signature="listGame()[pri:4, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:52:38 IST" name="listGame" finished-at="2025-04-21T19:53:24 IST" duration-ms="45379" status="PASS">
+        <test-method signature="listSort()[pri:4, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:42:54 IST" name="listSort" finished-at="2025-04-23T16:43:07 IST" duration-ms="12970" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- listGame -->
-        <test-method signature="logoutFromYourAtlassainAccount()[pri:7, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:53:24 IST" name="logoutFromYourAtlassainAccount" finished-at="2025-04-21T19:53:26 IST" duration-ms="2704" status="PASS">
+        </test-method> <!-- listSort -->
+        <test-method signature="closeBoard()[pri:5, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:43:07 IST" name="closeBoard" finished-at="2025-04-23T16:43:24 IST" duration-ms="17023" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Boards has been Closed Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBoard -->
+        <test-method signature="permanentlyCloseBoard()[pri:6, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:43:24 IST" name="permanentlyCloseBoard" finished-at="2025-04-23T16:44:21 IST" duration-ms="56385" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Boards has been Deleted Successfully...]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- permanentlyCloseBoard -->
+        <test-method signature="logoutFromYourAtlassainAccount()[pri:7, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:44:21 IST" name="logoutFromYourAtlassainAccount" finished-at="2025-04-23T16:44:23 IST" duration-ms="2748" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trello Boards page is Displayed]]>
@@ -63,7 +93,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- logoutFromYourAtlassainAccount -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@8462f31]" started-at="2025-04-21T19:53:26 IST" name="quitBrowser" finished-at="2025-04-21T19:53:29 IST" duration-ms="2390" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@65e98b1c]" started-at="2025-04-23T16:44:23 IST" name="quitBrowser" finished-at="2025-04-23T16:44:27 IST" duration-ms="3826" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.trello.testscripts.TrelloTestScripts">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="loginIntoYourAtlassainAccount"/>
           <include name="quitBrowser"/>
+          <include name="permanentlyCloseBoard"/>
+          <include name="launchBrowser"/>
         </methods>
       </class> <!-- com.trello.testscripts.TrelloTestScripts -->
     </classes>

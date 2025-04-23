@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeSuite;
 
 
 
-public class Baseclass{
+public class BaseClass{
 	
 	protected WebDriver driver ;
 	protected JavaUtility utility = new JavaUtility();
