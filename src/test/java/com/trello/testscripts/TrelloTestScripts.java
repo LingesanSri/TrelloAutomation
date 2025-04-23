@@ -22,7 +22,7 @@ import com.trello.pomrepository.TrelloUrlLaunchPage;
 
 public class TrelloTestScripts extends BaseClass {
 
-	// creating object Reference for soft assert as global reference type
+	// creating object Reference for soft assert as global reference type but not yet used
 	public SoftAssert softAssert = new SoftAssert();
 
 	@Test(priority = 1)
@@ -62,27 +62,6 @@ public class TrelloTestScripts extends BaseClass {
 		// Clicking on Login button
 		loginPage.getLoginButton().click();
 
-		// if mfa verfication asked if
-		/*
-		 * if (webDriverUtility.waitUntilVisible(excelUtility.readStringData(
-		 * "titleAndUr'ls", 2, 1))) {
-		 * 
-		 * loginPage.getMfaLinktextSkip().click();
-		 * 
-		 * Assert.assertEquals(webDriverUtility.waitUntilVisible(excelUtility.
-		 * readStringData("titleAndUr'ls", 2, 1)), false);
-		 * 
-		 * // logging statement
-		 * Reporter.log("Log in with Atlassian account page has been Displayed..."); }
-		 * 
-		 * else {
-		 * 
-		 * // logging statement
-		 * Reporter.log("Log in with Atlassian account page has not been Displayed...");
-		 * }
-		 */
-		// Explicitly Waiting for the page to be Loaded and logging statements`
-
 		Reporter.log("Login To Continue page has been Displayed...");
 
 		// asserting conditions to wait for excepted page to be displayed
@@ -92,7 +71,7 @@ public class TrelloTestScripts extends BaseClass {
 		// logging statement
 		Reporter.log("Login Into your Account is Successful...");
 
-		softAssert.assertAll();
+		
 
 	}
 
@@ -179,7 +158,7 @@ public class TrelloTestScripts extends BaseClass {
 
 		// logging statement
 		Reporter.log("Boards has been Created Successfully");
-		softAssert.assertAll();
+		
 	}
 
 	@Test(priority = 3)
@@ -272,7 +251,7 @@ public class TrelloTestScripts extends BaseClass {
 		homePage.getTrelloMainHomePageNavButton().click();
 
 		// asserting all conditions
-		softAssert.assertAll();
+		
 	}
 
 	@Test(priority = 5)
@@ -332,7 +311,7 @@ public class TrelloTestScripts extends BaseClass {
 		Reporter.log("Boards has been Closed Successfully...");
 
 		// asserting all conditionss
-		softAssert.assertAll();
+		
 
 	}
 
@@ -397,7 +376,7 @@ public class TrelloTestScripts extends BaseClass {
 		homePage.getTrelloMainHomePageNavButton().click();
 
 		// sserting all statement
-		softAssert.assertAll();
+		
 	}
 
 	@Test(priority = 7)
@@ -433,7 +412,7 @@ public class TrelloTestScripts extends BaseClass {
 
 		Reporter.log("Your Trello|Atlassaian Account logout is Successful");
 
-		softAssert.assertAll();
+		
 	}
 
 	@Test(priority = 4)
@@ -467,11 +446,10 @@ public class TrelloTestScripts extends BaseClass {
 			List<WebElement> initialList = boardsPage.getListCount();
 			List<WebElement> sortedList = new ArrayList<WebElement>();
 			List<String> currentTitles = initialList.stream().map(WebElement::getText).collect(Collectors.toList());
-			
-			
+
 			List<String> sortedTitles = new ArrayList<>(currentTitles);
 			Collections.sort(sortedTitles);
-			
+
 			for (String title : sortedTitles) {
 				for (WebElement element : initialList) {
 					if (element.getText().equals(title)) {
@@ -481,7 +459,6 @@ public class TrelloTestScripts extends BaseClass {
 				}
 			}
 
-	
 			for (int i = 0; i < initialList.size(); i++) {
 				String expectedtitleIndex = sortedTitles.get(i);
 				String actualTitleIndex = currentTitles.get(i);
@@ -492,14 +469,13 @@ public class TrelloTestScripts extends BaseClass {
 					actions.dragAndDrop(source, target).perform();
 
 				}
-        
+
 			}
 
 		}
-		
+
 		// Navigate back to home
 		homePage.getTrelloMainHomePageNavButton().click();
 	}
-
 
 }
