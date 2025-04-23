@@ -26,7 +26,7 @@ public class TrelloTestScripts extends BaseClass {
 	// yet used
 	public SoftAssert softAssert = new SoftAssert();
 
-	@Test(groups = "login")
+	@Test
 	public void loginIntoYourAtlassainAccount() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -74,7 +74,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "createBoard", dependsOnGroups = "login")
+	@Test(dependsOnMethods = "loginIntoYourAtlassainAccount")
 	public void CreateNewBoard() throws Throwable {
 
 		// Creating implict wait by passing reference to WebDriverUtility
@@ -161,7 +161,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "addList", dependsOnGroups = "createBoard")
+	@Test(dependsOnMethods = "CreateNewBoard")
 	public void addNewList() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -254,7 +254,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "cleanup", dependsOnGroups = { "createBoard", "sortList", "addList" })
+	@Test(dependsOnMethods = { "CreateNewBoard", "addNewList", "listSort" })
 	public void closeBoard() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -314,7 +314,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "cleanup", dependsOnMethods = "closeBoard")
+	@Test(dependsOnMethods = "closeBoard")
 	public void permanentlyCloseBoard() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -378,7 +378,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "logout", dependsOnMethods = "permanentlyCloseBoard")
+	@Test(dependsOnMethods = "permanentlyCloseBoard")
 	public void logoutFromYourAtlassainAccount() throws Throwable {
 
 		// Creating implict wait by passing reference to WebDriverUtility
@@ -413,7 +413,7 @@ public class TrelloTestScripts extends BaseClass {
 
 	}
 
-	@Test(groups = "sortList", dependsOnGroups = "addList")
+	@Test(dependsOnMethods = "addNewList")
 	public void listSort() throws Throwable {
 
 		// Implicit wait (applied once globally)

@@ -103,10 +103,5 @@ public class WebDriverUtility {
 		return result;
 	}
 
-	public void driverQuit() {
-
-		driver.close();
-		driver.quit();
-	}
 
 }

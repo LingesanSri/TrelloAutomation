@@ -5,7 +5,9 @@
     <classes>
       <class name="com.trello.testscripts.TrelloTestScripts">
         <methods>
+          <include name="logoutFromYourAtlassainAccount"/>
           <include name="listSort"/>
+          <include name="loginIntoYourAtlassainAccount"/>
           <include name="quitBrowser"/>
           <include name="closeBoard"/>
           <include name="permanentlyCloseBoard"/>
