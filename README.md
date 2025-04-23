@@ -95,7 +95,7 @@ Login/logout flow
 
 Board creation from Excel data
 
-List creation and counting
+List creation 
 
 Drag-and-drop alphabetical sorting
 
