@@ -1,362 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="0" failed="1" skipped="6">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Trello Launch page has been Displayed...]]>
     </line>
+    <line>
+      <![CDATA[Login To Continue page has been Displayed...]]>
+    </line>
+    <line>
+      <![CDATA[Login Into your Account is Successful...]]>
+    </line>
+    <line>
+      <![CDATA[Boards has been Created Successfully]]>
+    </line>
+    <line>
+      <![CDATA[List has been added Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Lists has been Sorted Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Boards has been Closed Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Boards has been Deleted Successfully...]]>
+    </line>
+    <line>
+      <![CDATA[Trello Boards page is Displayed]]>
+    </line>
+    <line>
+      <![CDATA[Your Trello|Atlassaian Account logout is Successful]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-23T23:28:14 IST" name="Default suite" finished-at="2025-04-23T23:28:18 IST" duration-ms="3625">
+  <suite started-at="2025-04-23T23:34:51 IST" name="Trello Automation Suite" finished-at="2025-04-23T23:36:59 IST" duration-ms="127050">
     <groups>
     </groups>
-    <test started-at="2025-04-23T23:28:14 IST" name="Default test" finished-at="2025-04-23T23:28:18 IST" duration-ms="3625">
+    <test started-at="2025-04-23T23:34:51 IST" name="End-to-End" finished-at="2025-04-23T23:36:59 IST" duration-ms="127050">
       <class name="com.trello.testscripts.TrelloTestScripts">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:11 IST" name="launchBrowser" finished-at="2025-04-23T23:28:14 IST" duration-ms="3300" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:34:48 IST" name="launchBrowser" finished-at="2025-04-23T23:34:51 IST" duration-ms="3616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="loginIntoYourAtlassainAccount()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:14 IST" name="loginIntoYourAtlassainAccount" finished-at="2025-04-23T23:28:18 IST" duration-ms="3496" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [673f739c946512a21fbe2ff27c22d51a, sendKeysToElement {id=f.C79F8D7D7BF37AB4274EA05B56B53128.d.64D0BEA88D0E3E298428A06443989227.e.5, value=[Ljava.lang.CharSequence;@3e4f80cb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\THULAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11253/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (673f739c946512a21fbe2ff27c22d51a)] -> xpath: //input[@id='password']]
-Session ID: 673f739c946512a21fbe2ff27c22d51a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=135.0.7049.96)
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [673f739c946512a21fbe2ff27c22d51a, sendKeysToElement {id=f.C79F8D7D7BF37AB4274EA05B56B53128.d.64D0BEA88D0E3E298428A06443989227.e.5, value=[Ljava.lang.CharSequence;@3e4f80cb}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\THULAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11253/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (673f739c946512a21fbe2ff27c22d51a)] -> xpath: //input[@id='password']]
-Session ID: 673f739c946512a21fbe2ff27c22d51a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
-at com.trello.testscripts.TrelloTestScripts.loginIntoYourAtlassainAccount(TrelloTestScripts.java:61)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method signature="loginIntoYourAtlassainAccount()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:34:52 IST" name="loginIntoYourAtlassainAccount" finished-at="2025-04-23T23:34:59 IST" duration-ms="7723" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trello Launch page has been Displayed...]]>
             </line>
+            <line>
+              <![CDATA[Login To Continue page has been Displayed...]]>
+            </line>
+            <line>
+              <![CDATA[Login Into your Account is Successful...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginIntoYourAtlassainAccount -->
-        <test-method signature="CreateNewBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="CreateNewBoard" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.loginIntoYourAtlassainAccount" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.loginIntoYourAtlassainAccount() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.loginIntoYourAtlassainAccount() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="CreateNewBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:34:59 IST" name="CreateNewBoard" finished-at="2025-04-23T23:35:33 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.loginIntoYourAtlassainAccount" duration-ms="33998" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Boards has been Created Successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- CreateNewBoard -->
-        <test-method signature="addNewList()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="addNewList" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.CreateNewBoard" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="addNewList()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:35:33 IST" name="addNewList" finished-at="2025-04-23T23:35:41 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.CreateNewBoard" duration-ms="7599" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[List has been added Successfully...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- addNewList -->
-        <test-method signature="listSort()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="listSort" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.addNewList" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.listSort() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.listSort() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="listSort()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:35:41 IST" name="listSort" finished-at="2025-04-23T23:35:54 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.addNewList" duration-ms="13384" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Lists has been Sorted Successfully...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- listSort -->
-        <test-method signature="closeBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="closeBoard" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.CreateNewBoard, com.trello.testscripts.TrelloTestScripts.addNewList, com.trello.testscripts.TrelloTestScripts.listSort" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.closeBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709
-com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709
-com.trello.testscripts.TrelloTestScripts.listSort() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.closeBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.CreateNewBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709
-com.trello.testscripts.TrelloTestScripts.addNewList() on instance com.trello.testscripts.TrelloTestScripts@6ad82709
-com.trello.testscripts.TrelloTestScripts.listSort() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="closeBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:35:54 IST" name="closeBoard" finished-at="2025-04-23T23:36:12 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.CreateNewBoard, com.trello.testscripts.TrelloTestScripts.addNewList, com.trello.testscripts.TrelloTestScripts.listSort" duration-ms="17695" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Boards has been Closed Successfully...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeBoard -->
-        <test-method signature="permanentlyCloseBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="permanentlyCloseBoard" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.closeBoard" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.closeBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.closeBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="permanentlyCloseBoard()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:36:12 IST" name="permanentlyCloseBoard" finished-at="2025-04-23T23:36:56 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.closeBoard" duration-ms="44141" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Boards has been Deleted Successfully...]]>
+            </line>
           </reporter-output>
         </test-method> <!-- permanentlyCloseBoard -->
-        <test-method signature="logoutFromYourAtlassainAccount()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="logoutFromYourAtlassainAccount" finished-at="2025-04-23T23:28:18 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.trello.testscripts.TrelloTestScripts.logoutFromYourAtlassainAccount() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.trello.testscripts.TrelloTestScripts.logoutFromYourAtlassainAccount() on instance com.trello.testscripts.TrelloTestScripts@6ad82709 depends on not successfully finished methods 
-[com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard() on instance com.trello.testscripts.TrelloTestScripts@6ad82709]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="logoutFromYourAtlassainAccount()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:36:56 IST" name="logoutFromYourAtlassainAccount" finished-at="2025-04-23T23:36:59 IST" depends-on-methods="com.trello.testscripts.TrelloTestScripts.permanentlyCloseBoard" duration-ms="2446" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Trello Boards page is Displayed]]>
+            </line>
+            <line>
+              <![CDATA[Your Trello|Atlassaian Account logout is Successful]]>
+            </line>
           </reporter-output>
         </test-method> <!-- logoutFromYourAtlassainAccount -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@6ad82709]" started-at="2025-04-23T23:28:18 IST" name="quitBrowser" finished-at="2025-04-23T23:28:18 IST" duration-ms="66" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [673f739c946512a21fbe2ff27c22d51a, minimizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\THULAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11253/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 673f739c946512a21fbe2ff27c22d51a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.28.1', revision: '73f5ad48a2'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [673f739c946512a21fbe2ff27c22d51a, minimizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.96, chrome: {chromedriverVersion: 135.0.7049.97 (b41307079c9b..., userDataDir: C:\Users\THULAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:11253}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:11253/devtoo..., se:cdpVersion: 135.0.7049.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 673f739c946512a21fbe2ff27c22d51a
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.minimize(RemoteWebDriver.java:1066)
-at com.trello.genericutility.WebDriverUtility.minimize(WebDriverUtility.java:27)
-at com.trello.genericutility.BaseClass.quitBrowser(BaseClass.java:57)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.trello.testscripts.TrelloTestScripts@367ffa75]" started-at="2025-04-23T23:36:59 IST" name="quitBrowser" finished-at="2025-04-23T23:37:01 IST" duration-ms="2153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- com.trello.testscripts.TrelloTestScripts -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- End-to-End -->
+  </suite> <!-- Trello Automation Suite -->
 </testng-results>

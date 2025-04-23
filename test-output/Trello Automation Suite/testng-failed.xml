@@ -2,25 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Trello Automation Suite]">
   <test thread-count="5" name="End-to-End(failed)">
-    <groups>
-      <run>
-        <include name="login"/>
-        <include name="createBoard"/>
-        <include name="addList"/>
-        <include name="sortList"/>
-        <include name="cleanup"/>
-        <include name="logout"/>
-      </run>
-    </groups>
     <classes>
       <class name="com.trello.testscripts.TrelloTestScripts">
         <methods>
           <include name="logoutFromYourAtlassainAccount"/>
           <include name="listSort"/>
           <include name="loginIntoYourAtlassainAccount"/>
+          <include name="quitBrowser"/>
           <include name="closeBoard"/>
           <include name="permanentlyCloseBoard"/>
           <include name="addNewList"/>
+          <include name="launchBrowser"/>
           <include name="CreateNewBoard"/>
         </methods>
       </class> <!-- com.trello.testscripts.TrelloTestScripts -->
