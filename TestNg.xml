@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<suite name="Test Suite">
-<test name="Test cases">
-<classes>
+<suite name="Trello Automation Suite">
 
-<class name="com.trello.testscripts.TrelloTestScripts"></class>
-</classes>
+  <test name="End-to-End">
 
-</test></suite>
+    <groups >
+        <include name="login"/>
+        <include name="createBoard"/>
+        <include name="addList"/>
+        <include name="sortList"/>
+        <include name="cleanup"/>
+        <include name="logout"/>
+    </groups>
+
+    <classes>
+      <class name="com.trello.testscripts.TrelloTestScripts"/>
+      </classes>
+  </test>
+
+</suite>

@@ -22,10 +22,11 @@ import com.trello.pomrepository.TrelloUrlLaunchPage;
 
 public class TrelloTestScripts extends BaseClass {
 
-	// creating object Reference for soft assert as global reference type but not yet used
+	// creating object Reference for soft assert as global reference type but not
+	// yet used
 	public SoftAssert softAssert = new SoftAssert();
 
-	@Test(priority = 1)
+	@Test(groups = "login")
 	public void loginIntoYourAtlassainAccount() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -71,11 +72,9 @@ public class TrelloTestScripts extends BaseClass {
 		// logging statement
 		Reporter.log("Login Into your Account is Successful...");
 
-		
-
 	}
 
-	@Test(priority = 2)
+	@Test(groups = "createBoard", dependsOnGroups = "login")
 	public void CreateNewBoard() throws Throwable {
 
 		// Creating implict wait by passing reference to WebDriverUtility
@@ -109,6 +108,7 @@ public class TrelloTestScripts extends BaseClass {
 				// Clearing in case of append happens
 				boardsPage.getBoardTitleTextfield().clear();
 
+				webDriverUtility.elementToBeClickable(boardsPage.getBoardTitleTextfield());
 				// entering board name in textfield
 				boardsPage.getBoardTitleTextfield().sendKeys(boardName[i]);
 
@@ -158,10 +158,10 @@ public class TrelloTestScripts extends BaseClass {
 
 		// logging statement
 		Reporter.log("Boards has been Created Successfully");
-		
+
 	}
 
-	@Test(priority = 3)
+	@Test(groups = "addList", dependsOnGroups = "createBoard")
 	public void addNewList() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -251,10 +251,10 @@ public class TrelloTestScripts extends BaseClass {
 		homePage.getTrelloMainHomePageNavButton().click();
 
 		// asserting all conditions
-		
+
 	}
 
-	@Test(priority = 5)
+	@Test(groups = "cleanup", dependsOnGroups = { "createBoard", "sortList", "addList" })
 	public void closeBoard() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -311,11 +311,10 @@ public class TrelloTestScripts extends BaseClass {
 		Reporter.log("Boards has been Closed Successfully...");
 
 		// asserting all conditionss
-		
 
 	}
 
-	@Test(priority = 6)
+	@Test(groups = "cleanup", dependsOnMethods = "closeBoard")
 	public void permanentlyCloseBoard() throws Throwable {
 
 		// Creating implicit wait by passing reference to WebDriverUtility
@@ -376,10 +375,10 @@ public class TrelloTestScripts extends BaseClass {
 		homePage.getTrelloMainHomePageNavButton().click();
 
 		// sserting all statement
-		
+
 	}
 
-	@Test(priority = 7)
+	@Test(groups = "logout", dependsOnMethods = "permanentlyCloseBoard")
 	public void logoutFromYourAtlassainAccount() throws Throwable {
 
 		// Creating implict wait by passing reference to WebDriverUtility
@@ -412,10 +411,9 @@ public class TrelloTestScripts extends BaseClass {
 
 		Reporter.log("Your Trello|Atlassaian Account logout is Successful");
 
-		
 	}
 
-	@Test(priority = 4)
+	@Test(groups = "sortList", dependsOnGroups = "addList")
 	public void listSort() throws Throwable {
 
 		// Implicit wait (applied once globally)
@@ -427,20 +425,23 @@ public class TrelloTestScripts extends BaseClass {
 		Actions actions = new Actions(super.driver);
 
 		// Wait for homepage to load
-		webDriverUtility.waitUntilVisible(excelUtility.readStringData("titleAndUrls", 3, 1));
+		Assert.assertEquals(webDriverUtility.waitUntilVisible(excelUtility.readStringData("titleAndUrls", 3, 1)), true,
+				"Trello Home Page has not been Dispayed...");
 
 		// Navigate to Boards
 		boardsPage.getBoards().click();
 
 		// Wait for Boards page to load
-		webDriverUtility.urlContains(excelUtility.readStringData("titleAndUrls", 6, 1));
+		Assert.assertEquals(webDriverUtility.urlContains(excelUtility.readStringData("titleAndUrls", 6, 1)), true,
+				"Trello Boards Page url has not been Dispayed...");
 
 		// Iterate through each board
 		for (WebElement board : boardsPage.getYourBoardsList()) {
 			board.click();
 
 			// Wait for specific board to load
-			webDriverUtility.urlContains(excelUtility.readStringData("titleAndUrls", 5, 1));
+			Assert.assertEquals(webDriverUtility.urlContains(excelUtility.readStringData("titleAndUrls", 5, 1)), true,
+					"Trello User Boards Page url has not been Dispayed...");
 
 			// Initial fetch of list elements and titles
 			List<WebElement> initialList = boardsPage.getListCount();
@@ -476,6 +477,7 @@ public class TrelloTestScripts extends BaseClass {
 
 		// Navigate back to home
 		homePage.getTrelloMainHomePageNavButton().click();
+		Reporter.log("Lists has been Sorted Successfully...");
 	}
 
 }

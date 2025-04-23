@@ -5,9 +5,13 @@
     <classes>
       <class name="com.trello.testscripts.TrelloTestScripts">
         <methods>
+          <include name="listSort"/>
           <include name="quitBrowser"/>
+          <include name="closeBoard"/>
           <include name="permanentlyCloseBoard"/>
+          <include name="addNewList"/>
           <include name="launchBrowser"/>
+          <include name="CreateNewBoard"/>
         </methods>
       </class> <!-- com.trello.testscripts.TrelloTestScripts -->
     </classes>
